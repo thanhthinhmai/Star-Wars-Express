@@ -5,6 +5,9 @@ const app = express();
 app.set('view engine', 'ejs');
 
 const routes = require('./routes');
+
+const path = require('path');
+app.use(express.static(path.join(__dirname, 'public')));
 // Routes
 
 // home

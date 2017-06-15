@@ -1,6 +1,17 @@
+const moviesJSON = require('../movies.json');
+
 exports.home = function(req, res){
+	let movies = moviesJSON.movies;
+	// let moviePosters = [];
+
+	// for(let i = 0; i < movies.length;i++){
+	// 	moviePoster = moviePosters.concat[movies[i].poster]
+	// }
+
 	res.render('home',{
-		title : 'Star Wars Movies'
+		title : 'Star Wars Movies',
+		movies : movies,
+		// moviePoster : moviePoster
 	});
 };
 
