@@ -19,6 +19,6 @@ app.get('/star_wars_episode/:episode_number?', routes.movie_single);
 //notFound
 app.get('*', routes.notFound);
 
-app.listen(3000, (req,res) =>{
-	console.log('Start port 3000');
+app.listen(4000, (req,res) =>{
+	console.log('Start port 4000');
 })
